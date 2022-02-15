@@ -11,7 +11,7 @@ class Mdfmt < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "85b4e720591709a57b83232bfbcee6c0d2a7cff8750e24f2c0980b582fefe960"
+      sha256 "838062ac5e8bf01390d8d08b9c9558c1ca1ed566f41edb1306337aa743549316"
 
       def install
         bin.install "mdfmt"
@@ -19,7 +19,7 @@ class Mdfmt < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "ae0e37d41b41d442bd1aa3a1308678f9012b4d9ef9a67a64c5259ad3aeb0bbfb"
+      sha256 "2202277ad69eb71562fedc300a3b66edc4e77a3683619b0e7560505689167d38"
 
       def install
         bin.install "mdfmt"
@@ -28,17 +28,17 @@ class Mdfmt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "990c6cb62ccea01e4d74abedb444b14f8080f82b949626fa2f89e772220cfd76"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "9902cb725c7409becf89276e9ba0e9e0b7cc9902f67e48b807e38e4eac5815f9"
 
       def install
         bin.install "mdfmt"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "c8a238ae80e775f72d862fc8b0893c4b82c402f16b297f410fe04443b3b433df"
+    if Hardware::CPU.intel?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.2.3/mdfmt_0.2.3_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "b745e2d95d327a708bf851227e934a1298f8bf49e8ef6869fc74c1c974afb510"
 
       def install
         bin.install "mdfmt"

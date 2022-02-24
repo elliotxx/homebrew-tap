@@ -5,21 +5,21 @@
 class Mdfmt < Formula
   desc "A Markdown formatter that follow the CommonMark. Like gofmt, but for Markdown."
   homepage "https://github.com/elliotxx/mdfmt"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.2/mdfmt_0.3.2_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "caffb3d936e1742ef7fd5e4656676c2eda80e5e2730a14cdf0ee859c3d7f1144"
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.3/mdfmt_0.3.3_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7b2d809208f7a50acffaf245228497363f6f7162c99ad74b5a7e9f2c8297ae80"
 
       def install
         bin.install "mdfmt"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.2/mdfmt_0.3.2_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "867f7d9a0853905f033524ad70d97f2e1fcd94ebe4e0d99fd063dd3e7f4c5ab9"
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.3/mdfmt_0.3.3_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "e074c7d38bdb79649bb338afc73c5a00f0eb1064ab44e89b333827c3abcda6d2"
 
       def install
         bin.install "mdfmt"
@@ -28,17 +28,17 @@ class Mdfmt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.2/mdfmt_0.3.2_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "457bbbe9ad93fbc676901bda4ce9e344a4c0166eff41002b6dcb63770dbb11d8"
+    if Hardware::CPU.intel?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.3/mdfmt_0.3.3_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "ebfc3dbd8f0177f3887669324a82b35ef2b6e5588dd95d693245ab6f2dde3b55"
 
       def install
         bin.install "mdfmt"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.2/mdfmt_0.3.2_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "a81d79625c2de5206c416db33f3879467f9b1067d9f2b0c51fa5960a1262e723"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.3.3/mdfmt_0.3.3_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "4c48440b3f4347c344f8639ecd7ab7110821ff8459095388f9a80c59b3c107ff"
 
       def install
         bin.install "mdfmt"

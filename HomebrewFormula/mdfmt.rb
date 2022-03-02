@@ -9,17 +9,17 @@ class Mdfmt < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "8dedf6ba0a116eb8002b3b3876295ead0261d8437033f6b3e18364420a7f3c49"
+    if Hardware::CPU.arm?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "e50817cc2fe31d7f61a5bea73a3f723a66ef48f26583069e8014e3c7b4c83cb7"
 
       def install
         bin.install "mdfmt"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "9b3a0ae049a7f3df934b0bb078458b38fcad9d39421db8ba25432e45f3a058a8"
+    if Hardware::CPU.intel?
+      url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "e800b0cd5dc3d828e334ba07b59cc75cfe92e1ca1293a8ed1a923988341255b0"
 
       def install
         bin.install "mdfmt"
@@ -30,7 +30,7 @@ class Mdfmt < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "aeddc6e5259743760596022017f3e24e8db0e20d36262b32626e2fecfa8e61a3"
+      sha256 "f49f2fc53476b4dbb9d568f498efc79c54c6d96d96498ee1c1424a825592a294"
 
       def install
         bin.install "mdfmt"
@@ -38,7 +38,7 @@ class Mdfmt < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/elliotxx/mdfmt/releases/download/v0.4.2/mdfmt_0.4.2_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "4c2c990f08e8b53bb4ad4e13e5db3a045bb26bb62d63b67ad312696725c2695f"
+      sha256 "5695cb7a0d21739af9b04aca9fcef6cdb39d29a6ec7e56afe2c2cd7c5947d820"
 
       def install
         bin.install "mdfmt"

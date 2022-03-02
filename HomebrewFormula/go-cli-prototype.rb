@@ -5,21 +5,21 @@
 class GoCliPrototype < Formula
   desc "This is a cli application with go and cobra."
   homepage "https://github.com/elliotxx/go-cli-prototype"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.8/go-cli-prototype_0.1.8_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "0eee2229547f792bac1adad5dbaffce9325f6cda3ba10142bb0e0b695b71c256"
+      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.9/go-cli-prototype_0.1.9_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7623369bbd63ad60e80f61ae7ef9fb1ae117ff64937f78b33f6deee6dce057db"
 
       def install
         bin.install "go-cli-prototype"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.8/go-cli-prototype_0.1.8_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "2616c2534d5ceb9880b6e0b1a5980c22c640fc95e15ada368c1a954d05926c7e"
+      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.9/go-cli-prototype_0.1.9_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7f8a67c7b30cc695f6db25b0f72db88192fbbe2c3a8c2e6265ac6a806b642237"
 
       def install
         bin.install "go-cli-prototype"
@@ -29,16 +29,16 @@ class GoCliPrototype < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.8/go-cli-prototype_0.1.8_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "065018eb85295c027f3660b7f4aa0592b38d6a19ced46eece661c8a86ee63e3e"
+      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.9/go-cli-prototype_0.1.9_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "06481ec76563ffeb5e14442653fdf6f41b28d380314380f2270479d803460d39"
 
       def install
         bin.install "go-cli-prototype"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.8/go-cli-prototype_0.1.8_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "c4cc3a90642f15ba596b4243856edcef7655e00b3d5ab482446025a103340096"
+      url "https://github.com/elliotxx/go-cli-prototype/releases/download/v0.1.9/go-cli-prototype_0.1.9_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "b8407c7bc9c261b8621a6349bccc93dd9da090e096a55aacb5ca4b32b50838cd"
 
       def install
         bin.install "go-cli-prototype"

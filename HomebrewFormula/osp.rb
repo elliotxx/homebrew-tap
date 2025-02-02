@@ -5,21 +5,21 @@
 class Osp < Formula
   desc "Open Source Software Pilot"
   homepage "https://github.com/elliotxx/osp"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/osp/releases/download/v0.1.12/osp_0.1.12_darwin_amd64.tar.gz"
-      sha256 "019ad454ce29d83a235d7ea2d6e9d525394984819d7a386d7b7ae0d01c39ecd0"
+      url "https://github.com/elliotxx/osp/releases/download/v0.1.13/osp_0.1.13_darwin_amd64.tar.gz"
+      sha256 "3fb53631fc0af1dfe8fa43c37755d4d379396f60a5988ed2f35d76a9ad5cadfe"
 
       def install
         bin.install "osp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/osp/releases/download/v0.1.12/osp_0.1.12_darwin_arm64.tar.gz"
-      sha256 "999c3425e317e94623deaa9f2d6e5c5474543a8749948182b74e2f94b52e3233"
+      url "https://github.com/elliotxx/osp/releases/download/v0.1.13/osp_0.1.13_darwin_arm64.tar.gz"
+      sha256 "8c267434d19f68114fa072427ddf7ce43ed603666af92e948bf05ade6c9d9964"
 
       def install
         bin.install "osp"
@@ -30,8 +30,8 @@ class Osp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/elliotxx/osp/releases/download/v0.1.12/osp_0.1.12_linux_amd64.tar.gz"
-        sha256 "37dc68e7a493c8736640527d8bb874c6ad47420068907c79842ec809c8d17cce"
+        url "https://github.com/elliotxx/osp/releases/download/v0.1.13/osp_0.1.13_linux_amd64.tar.gz"
+        sha256 "92aa5c95c003c8f69c009b7646a20ca5e60fcaa85c3adeb502204a3116d72a48"
 
         def install
           bin.install "osp"
@@ -40,8 +40,8 @@ class Osp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/elliotxx/osp/releases/download/v0.1.12/osp_0.1.12_linux_arm64.tar.gz"
-        sha256 "d18c07d4ec34a3d37f44f510aefd142df8987b94f8cf51da892fe305dfc83c04"
+        url "https://github.com/elliotxx/osp/releases/download/v0.1.13/osp_0.1.13_linux_arm64.tar.gz"
+        sha256 "b7afed36e64d30a5c7b53378f525cf1e67e6a770ef7d1094c23e751064291070"
 
         def install
           bin.install "osp"

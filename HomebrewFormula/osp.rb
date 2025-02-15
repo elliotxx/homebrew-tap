@@ -5,21 +5,21 @@
 class Osp < Formula
   desc "Open Source Software Pilot"
   homepage "https://github.com/elliotxx/osp"
-  version "0.1.16"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/osp/releases/download/v0.1.16/osp_0.1.16_darwin_amd64.tar.gz"
-      sha256 "cc38fa9885cede9c3cc46ba7b913d4bc6b64a98c234ef84c2373144270446544"
+      url "https://github.com/elliotxx/osp/releases/download/v0.2.0/osp_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4cb7f7e206d43fc2666833e60a1e73a41413a0c12018c5fe44e0760053e326dd"
 
       def install
         bin.install "osp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/osp/releases/download/v0.1.16/osp_0.1.16_darwin_arm64.tar.gz"
-      sha256 "0e2713cc51e4e36b8c2349c539a0dccbe18f931582a971475671abc1ad82c55f"
+      url "https://github.com/elliotxx/osp/releases/download/v0.2.0/osp_0.2.0_darwin_arm64.tar.gz"
+      sha256 "75b67bcff23ad3b3bdf82c1f0b4a1030e136201c7e07895874fe3a12e00f0421"
 
       def install
         bin.install "osp"
@@ -30,8 +30,8 @@ class Osp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/elliotxx/osp/releases/download/v0.1.16/osp_0.1.16_linux_amd64.tar.gz"
-        sha256 "e9e0e30f2224a40059c3af1576f8e51044f0e494fb6c47893cb0ce5eab730949"
+        url "https://github.com/elliotxx/osp/releases/download/v0.2.0/osp_0.2.0_linux_amd64.tar.gz"
+        sha256 "8eeb61a66b821561489cf61b5fd39bce3cf691b7a3a0003de7c176a06cf48bd7"
 
         def install
           bin.install "osp"
@@ -40,8 +40,8 @@ class Osp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/elliotxx/osp/releases/download/v0.1.16/osp_0.1.16_linux_arm64.tar.gz"
-        sha256 "774da0b7324690959be2116661bde3c9c964c268db688aa258cbb8f62ecc6abe"
+        url "https://github.com/elliotxx/osp/releases/download/v0.2.0/osp_0.2.0_linux_arm64.tar.gz"
+        sha256 "c59f78ba5dad4508f2e1bbb9b6a57990065c44deeba6999f8c7636a7b8d5da2b"
 
         def install
           bin.install "osp"

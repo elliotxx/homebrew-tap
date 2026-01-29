@@ -1,25 +1,25 @@
 class ClaudeList < Formula
   desc "CLI tool for viewing installed plugins, skills, agents, and MCP servers in Claude Code"
   homepage "https://github.com/elliotxx/claude-list"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/claude-list/releases/download/0.1.0/claude-list-aarch64-apple-darwin.tar.xz"
-      sha256 "5a9c0f2fc1c1f233f3e05835bcbfe4816c72ddd9b5e8e3e21372c8837ffd8599"
+      url "https://github.com/elliotxx/claude-list/releases/download/0.1.1/claude-list-aarch64-apple-darwin.tar.xz"
+      sha256 "904a9fdaa2efb81e4f655f8bb6a4da3b36d7344322593918d85010ba8f0ea5f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/claude-list/releases/download/0.1.0/claude-list-x86_64-apple-darwin.tar.xz"
-      sha256 "62d59be4ff5557ee110f9d3d9d2ef2a2181b690a8d2c5a763f7930d3058264ff"
+      url "https://github.com/elliotxx/claude-list/releases/download/0.1.1/claude-list-x86_64-apple-darwin.tar.xz"
+      sha256 "b53351c594d23c71cbb20dc3609c0dbe771f961592d4de523ec0ae7279bc9f3b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/claude-list/releases/download/0.1.0/claude-list-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fb3f5e40e861f49153d1a76063a07e3807a2b61a7974763195f4523e823cd5f0"
+      url "https://github.com/elliotxx/claude-list/releases/download/0.1.1/claude-list-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "23d93eb6e4d2454bd340bb71cc4bf31311596e1238aa0c5a0cef45fd414a4154"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/claude-list/releases/download/0.1.0/claude-list-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ba04b350d262bf10fce26db3fd3004e4141b05f3356889597b58c2c0555964f8"
+      url "https://github.com/elliotxx/claude-list/releases/download/0.1.1/claude-list-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2fd7961e855cf9c6f88bc415399148aa4edb76ee26bc324600fddcf5b83d7e04"
     end
   end
   license "MIT"

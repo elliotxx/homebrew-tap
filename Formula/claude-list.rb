@@ -1,25 +1,25 @@
 class ClaudeList < Formula
   desc "CLI tool for viewing installed plugins, skills, agents, and MCP servers in Claude Code"
   homepage "https://github.com/elliotxx/claude-list"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.2/claude-list-aarch64-apple-darwin.tar.xz"
-      sha256 "d20975cdf5486619f1918f44199808fa97357c6eb205e511154bb3f6439c64ae"
+      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-aarch64-apple-darwin.tar.xz"
+      sha256 "0e4936532ffc65565793532af3c9f6c02415101fc09da2173f503e8b0431323c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.2/claude-list-x86_64-apple-darwin.tar.xz"
-      sha256 "486a5d60e5580acf75cb011d4da67ee6e5f644a9caac5a2187f5bd0597803370"
+      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-x86_64-apple-darwin.tar.xz"
+      sha256 "16206e9770c1e2a4d38732c15e78a91bc770bd534628e76175f794333be25a47"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.2/claude-list-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3a2aab35b3f160a3262cc04e1eb899b46c645604f7ce83cc6e62389b4aad0118"
+      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6c0b002ff7a6fb9ddd6c5b89dbd481b7c847a222bd2d9efbf4d5848d2a55f408"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.2/claude-list-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2d797f093a3eaa5aaf27ef9621450594c0504607404d8d2e24ba1fa0b3c28d08"
+      url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "caded1a7c1f52990c8512c604584024e8df952e26dd6cfbcf45a4004a7494372"
     end
   end
   license "MIT"

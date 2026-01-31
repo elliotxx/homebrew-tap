@@ -5,21 +5,21 @@ class ClaudeList < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-aarch64-apple-darwin.tar.xz"
-      sha256 "0e4936532ffc65565793532af3c9f6c02415101fc09da2173f503e8b0431323c"
+      sha256 "2f7326089845fd7dcd636f8864a2da80e9086f8717d0bab7d61ce5d4c511cd7e"
     end
     if Hardware::CPU.intel?
       url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-x86_64-apple-darwin.tar.xz"
-      sha256 "16206e9770c1e2a4d38732c15e78a91bc770bd534628e76175f794333be25a47"
+      sha256 "7f1875f0943218f61af51fb6559934178e273eb155a6242c6d7ab7cbeaa425b2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6c0b002ff7a6fb9ddd6c5b89dbd481b7c847a222bd2d9efbf4d5848d2a55f408"
+      sha256 "14cf606c1bf7542673e0c511122e1410d2a461a32a489ab5acddece38eb37a85"
     end
     if Hardware::CPU.intel?
       url "https://github.com/elliotxx/claude-list/releases/download/v0.1.3/claude-list-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "caded1a7c1f52990c8512c604584024e8df952e26dd6cfbcf45a4004a7494372"
+      sha256 "a783cb3b40df0da91e4ac5dc11e9014b385d351242532097adad8f311d8a20e9"
     end
   end
   license "MIT"
